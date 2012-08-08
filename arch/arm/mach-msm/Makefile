@@ -478,7 +478,6 @@ obj-$(CONFIG_MACH_VISION) += board-vision.o
 obj-$(CONFIG_MACH_VISION) += board-vision-microp.o board-vision-rfkill.o
 obj-$(CONFIG_MACH_VISION) += board-vision-keypad.o board-vision-audio.o
 obj-$(CONFIG_MACH_VISION) += board-vision-mmc.o board-vision-wifi.o
-obj-$(CONFIG_MACH_VISION) += display/vision-panel.o
 obj-$(CONFIG_MACH_VISION) += htc_bdaddress.o
 obj-$(CONFIG_MACH_SAGA) += board-saga.o
 obj-$(CONFIG_MACH_SAGA) += board-saga-keypad.o board-saga-rfkill.o
