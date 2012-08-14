@@ -348,10 +348,10 @@ config FB_MSM_VISION_PANEL
 
 config FB_MSM_SAGA_PANEL
 	depends on FB_MSM_LCDC_HW && MACH_SAGA
-	bool "LCDC Vision WVGA Panels"
+	bool "LCDC Saga WVGA Panels"
 	select FB_MSM_LCDC_SONY_WVGA
 	---help---
-	  Support for Vision WVGA (800x480) panels
+	  Support for Saga WVGA (800x480) panels
 
 config FB_MSM_LCDC_PRISM_WVGA_PANEL
 	depends on FB_MSM_LCDC_HW
