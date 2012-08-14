@@ -476,7 +476,7 @@ ifeq ($(CONFIG_MICROP_COMMON),y)
 	obj-$(CONFIG_ARCH_MSM7X30) += display/panel-sonywvga-s6d16a0x21-7x30.o
 endif
 endif
-obj-$(CONFIG_MACH_VISION) += board-vision.o
+obj-$(CONFIG_MACH_VISION) += board-vision.o display/vision-panel.o
 obj-$(CONFIG_MACH_VISION) += board-vision-microp.o board-vision-rfkill.o
 obj-$(CONFIG_MACH_VISION) += board-vision-keypad.o board-vision-audio.o
 obj-$(CONFIG_MACH_VISION) += board-vision-mmc.o board-vision-wifi.o
