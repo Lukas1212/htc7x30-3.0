@@ -1213,7 +1213,11 @@ struct resource msm_fb_resources[] = {
 
 static int msm_fb_detect_panel(const char *name)
 {
+#if defined(CONFIG_FB_MSM_LCDC_AUTO_DETECT) || defined(CONFIG_FB_MSM_MDDI_AUTO_DETECT)
   return device_fb_detect_panel(name);
+#else
+  return -ENODEV;
+#endif
 }
 
 static struct msm_fb_platform_data msm_fb_pdata = {

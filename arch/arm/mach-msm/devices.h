@@ -30,11 +30,6 @@ void config_gpio_table_dbg(uint32_t *, int, char *, int);
 int panel_init_spi_hack(void);
 #if defined(CONFIG_FB_MSM_LCDC_AUTO_DETECT) || defined(CONFIG_FB_MSM_MDDI_AUTO_DETECT)
 int device_fb_detect_panel(const char *name);
-#else
-int device_fb_detect_panel(const char *name)
-{
-  return -ENODEV;
-}
 #endif
 
 extern struct platform_device asoc_msm_pcm;
